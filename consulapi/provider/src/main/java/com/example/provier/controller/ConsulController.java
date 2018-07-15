@@ -8,7 +8,7 @@ public class ConsulController {
 	
 	@RequestMapping("/consul/show")
 	public String show() {
-		return "哈哈";
+		return "哈哈123";
 	}
 
 }
