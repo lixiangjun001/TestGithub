@@ -9,7 +9,7 @@ public class ConsulController {
 	@RequestMapping("/consul/show")
 	public String show() {
 		System.out.println(123);
-		return "哈哈123";
+		return "哈哈1234";
 
 	}
 
