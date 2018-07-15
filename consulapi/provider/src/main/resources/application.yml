@@ -1,0 +1,26 @@
+server:
+  port: 8879
+  
+spring: 
+  application: 
+    name: consul-provider4
+  cloud:
+    consul:
+      host: 192.168.100.130
+#docker环境部署consul
+#集群环境下配置服务注册    只需要配置一台即可，其他服务节点自动同步
+ #当部署3个节点时，其容错是1，客户端严重依赖于服务器节点
+   #注册到leader节点，即使leader节点down掉了，服务仍然可以正常调用
+#服务注册到down掉的服务器是否正常注册
+#引导的推荐方法是使用-bootstrap-expect配置选项，所有服务器都应该指定相同的值。-bootstrap-expect或者根本不指定值。只有指定值的服务器才会尝试引导群集
+#服务器服务策略  （n/2）+1,例如3台服务器，必须有两台可用
+
+#若consul客户端位于8500之外，则需要配置consul.host
+#consul实例的运行状况检查默认为/health,若使用非默认路径，则需要配置健康检查路径
+
+        
+        
+       
+        
+
+            

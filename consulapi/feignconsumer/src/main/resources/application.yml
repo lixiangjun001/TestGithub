@@ -1,0 +1,13 @@
+server:
+  port: 8787
+spring: 
+  application:
+    name: feignconsumer2
+  cloud:
+    consul:
+      host: 192.168.100.131
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+#hystrix.command.default.execution.timeout.enabled: false
+#feign.hystrix.enabled: false
+  
